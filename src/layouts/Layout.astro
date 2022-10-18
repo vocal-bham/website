@@ -1,0 +1,130 @@
+---
+import Navigation from "~/components/Navigation.svelte";
+import Footer from "~/components/Footer.svelte";
+
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+        <Navigation
+            page={Astro.url.pathname}
+            title="VOCAL"
+            items={[
+                {
+                    name: "Home",
+                    href: "/"
+                },
+                {
+                    name: "Catalog",
+                    href: "/catalog"
+                },
+                {
+                    name: "About Us",
+                    href: "/about"
+                },
+                {
+                    name: "Contact",
+                    href: "/contact"
+                }
+            ]}
+        />
+
+		<slot />
+
+        <Footer></Footer>
+	</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');
+
+    :root {
+        --font-family-display: "Lora", serif;
+        --font-family-text: "Poppins", system-ui, sans-serif;
+
+        --background-primary: #f4feff;
+        --background-secondary: #d3e5eb;
+        --background-tertiary: #9bafb0;
+        --background-quaternary: #6a787c;
+
+        --background-alt-primary: #cce8ea;
+        --background-alt-secondary: #97b0b2;
+        --background-alt-tertiary: #657a7c;
+        --background-alt-quaternary: #374a4c;
+
+        --foreground-primary: #000000;
+        --foreground-secondary: #006f59;
+        --foreground-tertiary: #008a6f;
+        --foreground-quaternary: #00c7a2;
+
+        --foreground-alt-primary: #000000;
+        --foreground-alt-secondary: #164863;
+        --foreground-alt-tertiary: #467998;
+        --foreground-alt-quaternary: #77afd2;
+
+        --elevation-1: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        --elevation-2: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+        --elevation-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+        --elevation-4: 0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px rgba(0, 0, 0, 0.3);
+        --elevation-5: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.3);
+
+        --focus-ring: 0 0 0 2px var(--background-primary), 0 0 0 4px var(--foreground-primary);
+    }
+
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
+	body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--background-primary);
+        color: var(--foreground-secondary);
+		font-family: var(--font-family-text);
+	}
+</style>
+
+<style is:global>
+    :focus {
+        outline: none;
+        box-shadow: var(--focus-ring);
+    }
+
+	h1, h2, h3, h4, h5, h6 {
+        color: var(--foreground-primary);
+        font-family: var(--font-family-display);
+	}
+
+    h1 {
+        font-size: 42px;
+    }
+
+    p {
+        margin-block: 48px 24px; 
+    }
+
+    p {
+        line-height: 2;
+    }
+
+	code {
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+</style>

@@ -1,0 +1,80 @@
+---
+import type { Partner } from "~/types/catalog";
+
+interface Props extends Partner {
+    href?: string;
+}
+
+const {
+    name = "Unknown",
+    description = "",
+    website,
+    email,
+    phone,
+    location = "",
+    image = "",
+    date = "",
+    href
+} = Astro.props as Props;
+---
+
+<div class="catalog-card">
+    <a href={href}>
+        <img
+            src={image}
+            width="280"
+            height="120"
+            alt=""
+        />
+        <div class="catalog-card-body">
+            <h2>{name}</h2>
+            {description && <p>{description}</p>}
+        </div>
+    </a>
+</div>
+
+<style lang="scss">
+    .catalog-card {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border-radius: 16px;
+        background-color: var(--background-secondary);
+        transition: 150ms ease;
+
+        &:hover {
+            background-color: var(--background-alt-primary);
+            box-shadow: var(--elevation-2);
+            border-radius: 12px;
+            transform: translateY(-2px);
+        }
+
+        > a {
+            display: contents;
+        }
+
+        &-body {
+            padding: 14px;
+        }
+
+        img {
+            inline-size: 100%;
+            block-size: 120px;
+            object-fit: cover;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 18px;
+            color: var(--foreground-primary);
+        }
+
+        p {
+            margin: 0;
+            margin-block-start: 8px;
+            font-size: 14px;
+            color: var(--foreground-secondary);
+        }
+    }
+</style>

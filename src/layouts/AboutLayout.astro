@@ -1,0 +1,15 @@
+---
+import Layout from "./Layout.astro";
+
+import PageSection from "~/components/PageSection.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title="About Us">
+    <PageSection id="about">
+        <h1>{frontmatter.title}</h1>
+        <slot />
+        <!-- {JSON.stringify(frontmatter.team)} -->
+    </PageSection>
+</Layout>

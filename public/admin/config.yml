@@ -1,0 +1,44 @@
+backend:
+  name: git-gateway
+  publish_mode: editorial_workflow
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "partner"
+    identifier_field: name
+    label: "Partner"
+    folder: "src/pages/catalog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Partner Name", name: "name", widget: "string", required: true}
+      - {label: "Partner Description", name: "description", widget: "text", required: true}
+      - {label: "Partner Website", name: "website", widget: "string", required: false}
+      - {label: "Partner E-mail", name: "email", widget: "string", required: false}
+      - {label: "Partner Phone Number", name: "phone", widget: "string", required: false}
+      - {label: "Partner Location", name: "location", widget: "map", required: false}
+
+      - {label: "Featured Image", name: "image", widget: "image", required: true}
+      - {label: "Article", name: "body", widget: "markdown", required: true}
+
+      - {label: "Date Added", name: "date", widget: "datetime", required: true}
+
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "src/pages/about.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: ~/layouts/AboutLayout.astro}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - label: "Team"
+            name: "team"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Position", name: position, widget: "string"}
+              - {label: "Photo", name: "photo", widget: "image"}

@@ -1,0 +1,78 @@
+---
+import type { Partner } from "~/components/catalog";
+
+import Layout from "~/layouts/Layout.astro";
+import PageSection from "~/components/PageSection.astro";
+import CatalogCard from "~/components/CatalogCard.astro";
+
+import { createSearch } from "~/lib/search";
+
+let catalog: Partner[] = [];
+
+try {
+    catalog = await Astro.glob("./**.md");
+} catch {}
+
+const params = new URL(Astro.request.url).searchParams;
+const query = params.get("q") || "";
+
+const { search } = createSearch(catalog, {
+    fields: ["id", "name", "description", "author", "tags"]
+});
+
+const results: Partner[] = query ? search(query) : catalog;
+---
+
+<Layout title="Partners Catalog">
+    <PageSection id="catalog">
+        <div class="catalog-header">
+            <h1>Catalog</h1>
+            <form action="/catalog" method="GET">
+                <input class="catalog-search" type="search" name="q" value={query} placeholder="Search Catalog" autocomplete="on" />
+            </form>
+        </div>
+        <ul class="partners">
+            {results.map(partner => (
+                <CatalogCard href={partner.url} {...partner.frontmatter} />
+            ))}
+        </ul>
+    </PageSection>
+</Layout>
+
+<style lang="scss">
+    .partners {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-gap: 24px;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    
+    .catalog-header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding-block-end: 16px;
+        margin-block-end: 16px;
+        border-block-end: 1px solid var(--background-secondary);
+        h1 {
+            margin: 0;
+        }
+    }
+
+    .catalog-search {
+        inline-size: 240px;
+        max-inline-size: 100%;
+        font: inherit;
+        font-size: 14px;
+        border-radius: 8px;
+        padding: 8px 16px;
+        border: none;
+        background-color: var(--background-alt-primary);
+        &::placeholder {
+            color: var(--foreground-tertiary);
+        }
+    }
+</style>

@@ -1,0 +1,59 @@
+---
+import Layout from "~/layouts/Layout.astro";
+
+import Button from "~/components/Button.svelte";
+import PageSection from "~/components/PageSection.astro";
+---
+
+<Layout title="Home">
+    <PageSection id="hero">
+        <h1>Student Volunteer Opportunities</h1>
+        
+        <p>
+            We are a student-led organization based out of the Oak Mountain area of Shelby County in Alabama. Our main focus is to provide accessible volunteer and community service opportunities for youth in our area. We believe providing to the community creates a more enjoyable and livable area for everyone. We hope to improve our community for the better with our combined efforts.
+        </p>
+    
+        <Button href="/contact">
+            Get Involved
+            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20">
+                <path d="m8 15.167-1.229-1.229L10.708 10 6.771 6.062 8 4.833 13.167 10Z/" />
+            </svg>
+        </Button>
+    </PageSection>
+    <PageSection id="cards">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </PageSection>
+    <PageSection id="partners">
+        <!-- <h1>Help out</h1> -->
+    </PageSection>
+</Layout>
+
+<style lang="scss">
+    :global(.button) svg {
+        inline-size: 20px;
+        block-size: 20px;
+        margin-right: -8px;
+        margin-left: -8px;
+        fill: currentColor;
+    }
+
+    :global(#cards .page-section-inner) {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(280px, 1fr));
+        grid-gap: 24px;
+    }
+
+    .card {
+        block-size: 200px;
+        border-radius: 16px;
+        background-color: var(--background-secondary);
+        transition: 250ms ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--elevation-2);
+        }
+    }
+</style>

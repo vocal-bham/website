@@ -1,0 +1,35 @@
+---
+export interface Props {
+    // tag: string;
+    [key: string]: any;
+}
+
+const {
+    // tag = "section",
+    ...rest
+} = Astro.props as Props;
+
+// const Element = tag;
+---
+
+<section class="page-section" {...rest}>
+    <div class="page-section-inner">
+        <slot />
+    </div>
+</section>
+
+<style lang="scss">
+    .page-section {
+        position: relative;
+        &-inner {
+            box-sizing: border-box;
+            max-inline-size: 1200px;
+            padding: 48px;
+            margin-inline: auto;
+
+            @media only screen and (max-width: 905px) {
+                padding: 16px;
+            }
+        }
+    }
+</style>
