@@ -23,16 +23,17 @@
         list-style-type: none;
         position: relative;
         block-size: 100%;
+        margin-inline: 16px;
 
         &::before {
             content: "";
             position: absolute;
-            width: calc(100% - 20px);
-            height: 30px;
-            border-radius: 50px;
-            background: var(--background-primary);
-            transform: scaleX(0.75);
-            transform-origin: center;
+            border-bottom: 2px solid var(--background-secondary);
+            inline-size: 100%;
+            block-size: 2px;
+            inset-block-end: 0;
+            transform: scaleX(0);
+            transform-origin: left;
             opacity: 0;
             transition: 150ms ease;
         }
@@ -52,25 +53,14 @@
             position: relative;
             display: flex;
             align-items: center;
-            padding-inline: 24px;
-            padding-block: 16px;
+            padding-block: 4px;
             text-decoration: none;
             font-weight: 500;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 16px;
             letter-spacing: 0.5px;
             text-align: center;
-            color: var(--foreground-secondary);
-        }
-
-        span {
-            transition: 150ms ease;
-            padding: 8px 16px;
-            border-radius: 50px;
-        }
-
-        &.selected span {
-            background-color: var(--background-primary);
+            color: var(--background-secondary);
         }
     }
 </style>
