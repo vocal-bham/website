@@ -9,7 +9,7 @@ interface SearchOptions {
 	offset?: number;
 }
 
-export function createSearch(items = [], options: DocumentOptions) {
+export function createSearch(items: any[] = [], options: DocumentOptions) {
 	const doc = new flexsearch.Document({
 		tokenize: "forward",
 		index: options.fields
@@ -37,7 +37,7 @@ export function createSearch(items = [], options: DocumentOptions) {
 }
 
 export function excerpt(content: string, query: string) {
-	const escape = text => text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+	const escape = (str: string) => str.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 	const index = content.toLowerCase().indexOf(query.toLowerCase());
 
