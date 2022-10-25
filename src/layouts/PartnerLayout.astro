@@ -1,14 +1,43 @@
 ---
 import Layout from "./Layout.astro";
+import Button from "~/components/Button.svelte";
 
 import PageSection from "~/components/PageSection.astro";
 
-const { frontmatter: partner } = Astro.props;
+const { frontmatter: partner }: Partner = Astro.props;
 ---
 
 <Layout title={partner.name}>
-    <PageSection id="about">
-        <h1>{partner.name}</h1>
-        <slot />
+    <PageSection id="partner">
+        <div class="partner-info">
+            <span>{partner.location}</span>
+            <h1>{partner.name}</h1>
+            <p>{partner.description}</p>
+            {partner.website && (
+                <Button href={partner.website} target="_blank" rel="noreferrer noopener">Go to website</Button>
+            )}
+        </div>
+        <img class="partner-image" src={partner.image} alt="" />
     </PageSection>
 </Layout>
+
+<style lang="scss">
+    :global(#partner .page-section-inner) {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        overflow: hidden;
+    }
+
+    .partner-info {
+        flex: 0 0 auto;
+        width: 40%;
+    }
+
+    .partner-image {
+        flex: 1 1 auto;
+        max-width: 100%;
+        min-width: 0;
+        border-radius: 16px;
+    }
+</style>

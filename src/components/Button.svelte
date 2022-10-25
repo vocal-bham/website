@@ -61,7 +61,7 @@
 
             &filled {
                 background-color: var(--foreground-secondary);
-                color: #fff;
+                color: var(--background-primary);
 
                 &:hover {
                     background-color: var(--foreground-tertiary);

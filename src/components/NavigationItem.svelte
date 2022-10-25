@@ -24,6 +24,7 @@
         position: relative;
         block-size: 100%;
         margin-inline: 16px;
+        padding-block: 8px;
 
         &::before {
             content: "";
