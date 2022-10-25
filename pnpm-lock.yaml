@@ -1,4 +1,4 @@
-lockfileVersion: 5.4
+lockfileVersion: 5.3
 
 specifiers:
   '@astrojs/netlify': ^1.2.0
@@ -145,7 +145,7 @@ packages:
       '@sveltejs/vite-plugin-svelte': 1.0.9_svelte@3.52.0
       postcss-load-config: 3.1.4
       svelte: 3.52.0
-      svelte-preprocess: 4.10.7_feehkil2qsgwzgo6ozrzfzvxu4
+      svelte-preprocess: 4.10.7_290875217a848d6c99de766392e6b7a7
       svelte2tsx: 0.5.20_svelte@3.52.0
     transitivePeerDependencies:
       - '@babel/core'
@@ -574,7 +574,7 @@ packages:
     resolution: {integrity: sha512-OiTkRgpxescko+M51tZsMq7Puu/KP55wMT8BgpcXVG2hqXc0Vo0mfymJ/Uj24Hp0i083ji/o0aLddh08UEjq8w==}
     dev: true
 
-  /@emotion/styled-base/10.3.0_qzeatvug73zaio2r3dlvejynye:
+  /@emotion/styled-base/10.3.0_864809d686fef2043b51d8d752270dc1:
     resolution: {integrity: sha512-PBRqsVKR7QRNkmfH78hTSSwHWcwDpecH9W6heujWAcyp2wdz/64PP73s7fWS1dIPm8/Exc8JAzYS8dEWXjv60w==}
     peerDependencies:
       '@emotion/core': ^10.0.28
@@ -588,14 +588,14 @@ packages:
       react: 16.14.0
     dev: true
 
-  /@emotion/styled/10.3.0_qzeatvug73zaio2r3dlvejynye:
+  /@emotion/styled/10.3.0_864809d686fef2043b51d8d752270dc1:
     resolution: {integrity: sha512-GgcUpXBBEU5ido+/p/mCT2/Xx+Oqmp9JzQRuC+a4lYM4i4LBBn/dWvc0rQ19N9ObA8/T4NWMrPNe79kMBDJqoQ==}
     peerDependencies:
       '@emotion/core': ^10.0.27
       react: '>=16.3.0'
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled-base': 10.3.0_qzeatvug73zaio2r3dlvejynye
+      '@emotion/styled-base': 10.3.0_864809d686fef2043b51d8d752270dc1
       babel-plugin-emotion: 10.2.2
       react: 16.14.0
     dev: true
@@ -1126,6 +1126,7 @@ packages:
     dependencies:
       normalize-path: 3.0.0
       picomatch: 2.3.1
+    dev: true
 
   /apollo-cache-inmemory/1.6.6:
     resolution: {integrity: sha512-L8pToTW/+Xru2FFAhkZ1OA9q4V4nuvfoPecBM34DecAugUZEBhI2Hmpgnzq2hTKZ60LAMrlqiASm0aqAY6F8/A==}
@@ -1479,6 +1480,7 @@ packages:
   /binary-extensions/2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
+    dev: true
 
   /bl/5.0.0:
     resolution: {integrity: sha512-8vxFNZ0pflFfi0WXA3WQXlj6CaMEwsmh63I1CNp0q+wWv8sD0ARx1KovSQd0l2GkwrMIOyedq0EF1FxI+RCZLQ==}
@@ -1640,6 +1642,7 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
 
   /ci-info/3.5.0:
     resolution: {integrity: sha512-yH4RezKOGlOhxkmhbeNuC4eYZKAUsEaGtBuBzDDP1eFUKiccDWzBABxBfOx31IDwDIXMTxWuwAxUGModvkbuVw==}
@@ -1796,11 +1799,6 @@ packages:
 
   /debug/3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
     dependencies:
       ms: 2.1.3
     dev: true
@@ -3047,6 +3045,7 @@ packages:
 
   /immutable/4.1.0:
     resolution: {integrity: sha512-oNkuqVTA8jqG1Q6c+UglTOD1xhC1BtjKI7XkCXRkZHrN5m18/XsnUp8Q89GkQO/z+0WjonSvl0FLhDYftp46nQ==}
+    dev: true
 
   /import-fresh/3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
@@ -3135,6 +3134,7 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       binary-extensions: 2.2.0
+    dev: true
 
   /is-boolean-object/1.1.2:
     resolution: {integrity: sha512-gDYaKHJmnj4aWxyj6YHyXVpdQawtVLHU5cb+eztPGczf6cjuTdwve5ZIEfgXqH4e57An1D1AKf8CZ3kYrQRqYA==}
@@ -4307,48 +4307,48 @@ packages:
     hasBin: true
     dev: false
 
-  /netlify-cms-app/2.15.72_wcqkhtmu7mswc6yz4uyexck3ty:
+  /netlify-cms-app/2.15.72_react-dom@16.14.0+react@16.14.0:
     resolution: {integrity: sha512-oUqLegvCa2UdOK42tLByyol6RnLG3mMr55jj9W5DX199ODGZlD6V39S5UlrDD2r183SUAgDYersq5LjeBTTz0Q==}
     peerDependencies:
       react: ^16.8.4 || ^17.0.0
       react-dom: ^16.8.4 || ^17.0.0
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled': 10.3.0_qzeatvug73zaio2r3dlvejynye
+      '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
       codemirror: 5.65.9
       immutable: 3.8.2
       lodash: 4.17.21
       moment: 2.29.4
-      netlify-cms-backend-azure: 1.3.1_su5sfgv27mfkqq3fxwuqkjofzq
-      netlify-cms-backend-bitbucket: 2.14.0_su5sfgv27mfkqq3fxwuqkjofzq
-      netlify-cms-backend-git-gateway: 2.13.1_e3jtqcopxcv2qi6f2mav43c4yu
-      netlify-cms-backend-github: 2.14.1_punrvvegi5wx7tdb7s4oqkg5l4
-      netlify-cms-backend-gitlab: 2.13.0_su5sfgv27mfkqq3fxwuqkjofzq
-      netlify-cms-backend-proxy: 1.2.3_sjjzktrxpyl5zrqbp4cx7rz7le
-      netlify-cms-backend-test: 2.11.3_ktitrw4graai6yalgaejpjxkae
-      netlify-cms-core: 2.55.2_ythuhdq3nrhr4ejpwxbpddatem
+      netlify-cms-backend-azure: 1.3.1_953b229abafb0aa84365bda90525c5cc
+      netlify-cms-backend-bitbucket: 2.14.0_953b229abafb0aa84365bda90525c5cc
+      netlify-cms-backend-git-gateway: 2.13.1_26d33809cfb8aba823c5d3015e6c5cc5
+      netlify-cms-backend-github: 2.14.1_7d1b1ad486476d7fcc61fcb8e828dd5f
+      netlify-cms-backend-gitlab: 2.13.0_953b229abafb0aa84365bda90525c5cc
+      netlify-cms-backend-proxy: 1.2.3_9253954e377e17dcc6017f057fc73f59
+      netlify-cms-backend-test: 2.11.3_54d138db8688008f600b300897a6ea01
+      netlify-cms-core: 2.55.2_38a8579e92931bd6bdd66b68eecd7adc
       netlify-cms-editor-component-image: 2.7.0_react@16.14.0
-      netlify-cms-lib-auth: 2.4.2_szapxaavwnp7wyhyayx2apxgym
-      netlify-cms-lib-util: 2.15.1_y7hmz3pgikxz4dg77iijw34oam
-      netlify-cms-lib-widgets: 1.8.1_whj3mruzilourbt6qwzydjgxty
+      netlify-cms-lib-auth: 2.4.2_9640fb8015b35ffb60f8062fa03ee6c3
+      netlify-cms-lib-util: 2.15.1_immutable@3.8.2+lodash@4.17.21
+      netlify-cms-lib-widgets: 1.8.1_b1d3b6469942dd48867e85b381a4d79e
       netlify-cms-locales: 1.39.0
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
-      netlify-cms-widget-boolean: 2.4.1_4ivmv7ywfjriw4ajonafzvrml4
-      netlify-cms-widget-code: 1.3.4_7r4gcl3w74u5z3lo7rnps5rbne
-      netlify-cms-widget-colorstring: 1.1.2_dxe62dqlionp2ksfhhagpnszwu
-      netlify-cms-widget-date: 2.6.3_y226rfw2rndkjvoqcknxmw2lhe
-      netlify-cms-widget-datetime: 2.7.4_6dofh2ik7dxf6f5sc5tdgz5meq
-      netlify-cms-widget-file: 2.12.1_xb6xm746upvaiyqovrgebe2mnm
-      netlify-cms-widget-image: 2.8.1_oerjfzdiy3xh5i47bh5u32f4qe
-      netlify-cms-widget-list: 2.10.1_jlvdp67ukena4a6sh6eqvycqli
-      netlify-cms-widget-map: 1.5.1_4ivmv7ywfjriw4ajonafzvrml4
-      netlify-cms-widget-markdown: 2.15.1_qqcwogdvskxeou2p4vwdvw3uvi
-      netlify-cms-widget-number: 2.5.0_n3cg5p7z5ulk6uzig4wpbqjjbu
-      netlify-cms-widget-object: 2.7.2_fqxxx3e6kdik3orzgncvbxibi4
-      netlify-cms-widget-relation: 2.11.1_pbin6g6qakukzewsg23ukto3oe
-      netlify-cms-widget-select: 2.8.2_4gdniz67egopkrlp2raju6ncmy
-      netlify-cms-widget-string: 2.3.0_n3cg5p7z5ulk6uzig4wpbqjjbu
-      netlify-cms-widget-text: 2.4.1_n3cg5p7z5ulk6uzig4wpbqjjbu
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
+      netlify-cms-widget-boolean: 2.4.1_e22acaff162a628b700973405cd62c5f
+      netlify-cms-widget-code: 1.3.4_fc78612f76ff29dced6efc5af9762169
+      netlify-cms-widget-colorstring: 1.1.2_1dc9ed0e0b439afd2a4539c067b659b5
+      netlify-cms-widget-date: 2.6.3_c6b5e896da8b46a4d5d0129b765b4b39
+      netlify-cms-widget-datetime: 2.7.4_f0dc53e90af8ee5f17b217663367ac24
+      netlify-cms-widget-file: 2.12.1_b87d767f9ea3ea04620eac4c40934c6b
+      netlify-cms-widget-image: 2.8.1_712292e468c6ee7ea39f09fb4de8bc81
+      netlify-cms-widget-list: 2.10.1_4aea37fbf4511a0e03d23f890ae0505a
+      netlify-cms-widget-map: 1.5.1_e22acaff162a628b700973405cd62c5f
+      netlify-cms-widget-markdown: 2.15.1_840567187592ae47534fe56c3adb74aa
+      netlify-cms-widget-number: 2.5.0_6ec46ebff9ed16af5328372cf0c1290d
+      netlify-cms-widget-object: 2.7.2_2c2f7bec9e50d0adba39334550dd0147
+      netlify-cms-widget-relation: 2.11.1_7850df1bd002a8ac92d236b7454ddb71
+      netlify-cms-widget-select: 2.8.2_e186d467df219cf5456fd4409a79a266
+      netlify-cms-widget-string: 2.3.0_6ec46ebff9ed16af5328372cf0c1290d
+      netlify-cms-widget-text: 2.4.1_6ec46ebff9ed16af5328372cf0c1290d
       prop-types: 15.8.1
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -4364,7 +4364,7 @@ packages:
       - supports-color
     dev: true
 
-  /netlify-cms-backend-azure/1.3.1_su5sfgv27mfkqq3fxwuqkjofzq:
+  /netlify-cms-backend-azure/1.3.1_953b229abafb0aa84365bda90525c5cc:
     resolution: {integrity: sha512-mD0vYjhZAUjjc6/WeK/ei+uvgwYAMIE8zNxPCNYLBLLGS5s5bk4DdKeqTMwtzonjz+wfvMc1VVBEj8CHGeP8ZA==}
     peerDependencies:
       '@emotion/core': ^10.0.9
@@ -4378,19 +4378,19 @@ packages:
       react: ^16.8.4 || ^17.0.0
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled': 10.3.0_qzeatvug73zaio2r3dlvejynye
+      '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
       immutable: 3.8.2
       js-base64: 3.7.2
       lodash: 4.17.21
-      netlify-cms-lib-auth: 2.4.2_szapxaavwnp7wyhyayx2apxgym
-      netlify-cms-lib-util: 2.15.1_y7hmz3pgikxz4dg77iijw34oam
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-lib-auth: 2.4.2_9640fb8015b35ffb60f8062fa03ee6c3
+      netlify-cms-lib-util: 2.15.1_immutable@3.8.2+lodash@4.17.21
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       prop-types: 15.8.1
       react: 16.14.0
       semaphore: 1.1.0
     dev: true
 
-  /netlify-cms-backend-bitbucket/2.14.0_su5sfgv27mfkqq3fxwuqkjofzq:
+  /netlify-cms-backend-bitbucket/2.14.0_953b229abafb0aa84365bda90525c5cc:
     resolution: {integrity: sha512-8629cRpUaQ4MulD8OjCqwuqtLjj5G12S6SZfM/wZkibx+T9JIetVNV4Fqj7ddMGXX+NLjw+uiig3wtPz3jgM1Q==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4404,21 +4404,21 @@ packages:
       react: ^16.8.4 || ^17.0.0
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled': 10.3.0_qzeatvug73zaio2r3dlvejynye
+      '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
       common-tags: 1.8.2
       immutable: 3.8.2
       js-base64: 3.7.2
       lodash: 4.17.21
-      netlify-cms-lib-auth: 2.4.2_szapxaavwnp7wyhyayx2apxgym
-      netlify-cms-lib-util: 2.15.1_y7hmz3pgikxz4dg77iijw34oam
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-lib-auth: 2.4.2_9640fb8015b35ffb60f8062fa03ee6c3
+      netlify-cms-lib-util: 2.15.1_immutable@3.8.2+lodash@4.17.21
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       prop-types: 15.8.1
       react: 16.14.0
       semaphore: 1.1.0
       what-the-diff: 0.6.0
     dev: true
 
-  /netlify-cms-backend-git-gateway/2.13.1_e3jtqcopxcv2qi6f2mav43c4yu:
+  /netlify-cms-backend-git-gateway/2.13.1_26d33809cfb8aba823c5d3015e6c5cc5:
     resolution: {integrity: sha512-0prZbfmDd7k2Ww16kS1wayCBH/Er5fj/2OxdLPxoanQSRmCmTF1v9RRsy/52UR4mQdZd1e7Y5zgpIeoHk1aq6g==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4434,23 +4434,23 @@ packages:
       react: ^16.8.4 || ^17.0.0
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled': 10.3.0_qzeatvug73zaio2r3dlvejynye
+      '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
       gotrue-js: 0.9.29
       ini: 2.0.0
       jwt-decode: 3.1.2
       lodash: 4.17.21
       minimatch: 3.1.2
-      netlify-cms-backend-bitbucket: 2.14.0_su5sfgv27mfkqq3fxwuqkjofzq
-      netlify-cms-backend-github: 2.14.1_punrvvegi5wx7tdb7s4oqkg5l4
-      netlify-cms-backend-gitlab: 2.13.0_su5sfgv27mfkqq3fxwuqkjofzq
-      netlify-cms-lib-auth: 2.4.2_szapxaavwnp7wyhyayx2apxgym
-      netlify-cms-lib-util: 2.15.1_y7hmz3pgikxz4dg77iijw34oam
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-backend-bitbucket: 2.14.0_953b229abafb0aa84365bda90525c5cc
+      netlify-cms-backend-github: 2.14.1_7d1b1ad486476d7fcc61fcb8e828dd5f
+      netlify-cms-backend-gitlab: 2.13.0_953b229abafb0aa84365bda90525c5cc
+      netlify-cms-lib-auth: 2.4.2_9640fb8015b35ffb60f8062fa03ee6c3
+      netlify-cms-lib-util: 2.15.1_immutable@3.8.2+lodash@4.17.21
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       prop-types: 15.8.1
       react: 16.14.0
     dev: true
 
-  /netlify-cms-backend-github/2.14.1_punrvvegi5wx7tdb7s4oqkg5l4:
+  /netlify-cms-backend-github/2.14.1_7d1b1ad486476d7fcc61fcb8e828dd5f:
     resolution: {integrity: sha512-To7ZxqMUQuV7TBrckhKUT/uwHtVbRcs6RzDPayYkkA5j5SLlrQY2nJYpPQgJjEktCLYMPvcz2HZXTzWMOyvDDA==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4463,7 +4463,7 @@ packages:
       react: ^16.8.4 || ^17.0.0
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled': 10.3.0_qzeatvug73zaio2r3dlvejynye
+      '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
       apollo-cache-inmemory: 1.6.6_graphql@15.8.0
       apollo-client: 2.6.10_graphql@15.8.0
       apollo-link-context: 1.0.20_graphql@15.8.0
@@ -4473,15 +4473,15 @@ packages:
       graphql-tag: 2.12.6_graphql@15.8.0
       js-base64: 3.7.2
       lodash: 4.17.21
-      netlify-cms-lib-auth: 2.4.2_szapxaavwnp7wyhyayx2apxgym
-      netlify-cms-lib-util: 2.15.1_y7hmz3pgikxz4dg77iijw34oam
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-lib-auth: 2.4.2_9640fb8015b35ffb60f8062fa03ee6c3
+      netlify-cms-lib-util: 2.15.1_immutable@3.8.2+lodash@4.17.21
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       prop-types: 15.8.1
       react: 16.14.0
       semaphore: 1.1.0
     dev: true
 
-  /netlify-cms-backend-gitlab/2.13.0_su5sfgv27mfkqq3fxwuqkjofzq:
+  /netlify-cms-backend-gitlab/2.13.0_953b229abafb0aa84365bda90525c5cc:
     resolution: {integrity: sha512-2x837ljDP/u0oBGTTc5D6CKFjZph1aNRlYiS1wzxLVPseXYuheDWpeTaNGroHbDTaZjIU9XS72Ezpeh54YqUlw==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4495,7 +4495,7 @@ packages:
       react: ^16.8.4 || ^17.0.0
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled': 10.3.0_qzeatvug73zaio2r3dlvejynye
+      '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
       apollo-cache-inmemory: 1.6.6
       apollo-client: 2.6.10
       apollo-link-context: 1.0.20
@@ -4503,9 +4503,9 @@ packages:
       immutable: 3.8.2
       js-base64: 3.7.2
       lodash: 4.17.21
-      netlify-cms-lib-auth: 2.4.2_szapxaavwnp7wyhyayx2apxgym
-      netlify-cms-lib-util: 2.15.1_y7hmz3pgikxz4dg77iijw34oam
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-lib-auth: 2.4.2_9640fb8015b35ffb60f8062fa03ee6c3
+      netlify-cms-lib-util: 2.15.1_immutable@3.8.2+lodash@4.17.21
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       prop-types: 15.8.1
       react: 16.14.0
       semaphore: 1.1.0
@@ -4513,7 +4513,7 @@ packages:
       - graphql
     dev: true
 
-  /netlify-cms-backend-proxy/1.2.3_sjjzktrxpyl5zrqbp4cx7rz7le:
+  /netlify-cms-backend-proxy/1.2.3_9253954e377e17dcc6017f057fc73f59:
     resolution: {integrity: sha512-HSbTxER/QaYonr8JC8W2eULKmvCwgH42NHNqKAz4QZNE5qNdbNk7pccfHHa3YjE4JcEcpJEMkb3+GrdDhq2QCw==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4524,14 +4524,14 @@ packages:
       react: ^16.8.4 || ^17.0.0
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled': 10.3.0_qzeatvug73zaio2r3dlvejynye
-      netlify-cms-lib-util: 2.15.1_y7hmz3pgikxz4dg77iijw34oam
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
+      netlify-cms-lib-util: 2.15.1_immutable@3.8.2+lodash@4.17.21
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       prop-types: 15.8.1
       react: 16.14.0
     dev: true
 
-  /netlify-cms-backend-test/2.11.3_ktitrw4graai6yalgaejpjxkae:
+  /netlify-cms-backend-test/2.11.3_54d138db8688008f600b300897a6ea01:
     resolution: {integrity: sha512-L7WXjryPcZ8immIkrdDauZjqiOrKS5NIcc6ewP9QI1BrZr2jeqwDpeN2/45fPdg/TRxtRA3ik3MuKXXLJRJ0MQ==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4544,16 +4544,16 @@ packages:
       uuid: ^3.3.2
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled': 10.3.0_qzeatvug73zaio2r3dlvejynye
+      '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
       lodash: 4.17.21
-      netlify-cms-lib-util: 2.15.1_y7hmz3pgikxz4dg77iijw34oam
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-lib-util: 2.15.1_immutable@3.8.2+lodash@4.17.21
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       prop-types: 15.8.1
       react: 16.14.0
       uuid: 3.4.0
     dev: true
 
-  /netlify-cms-core/2.55.2_ythuhdq3nrhr4ejpwxbpddatem:
+  /netlify-cms-core/2.55.2_38a8579e92931bd6bdd66b68eecd7adc:
     resolution: {integrity: sha512-g7pU53axFQt8n3zzyNt/FI8vPv/lZ+G4cJnh5sfyWSM9/rK4wr7DeDfZTbmjPeonfuUFiD1UrFqzwqAnT7BjTA==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4566,11 +4566,9 @@ packages:
       netlify-cms-lib-util: ^2.12.3
       netlify-cms-lib-widgets: ^1.6.1
       netlify-cms-ui-default: ^2.12.1
-      react: ^16.8.4 || ^17.0.0
-      react-dom: ^16.8.4 || ^17.0.0
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled': 10.3.0_qzeatvug73zaio2r3dlvejynye
+      '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
       '@iarna/toml': 2.2.5
       ajv: 8.1.0
       ajv-errors: 3.0.0_ajv@8.1.0
@@ -4590,35 +4588,35 @@ packages:
       lodash: 4.17.21
       moment: 2.29.4
       netlify-cms-editor-component-image: 2.7.0_react@16.14.0
-      netlify-cms-lib-auth: 2.4.2_szapxaavwnp7wyhyayx2apxgym
-      netlify-cms-lib-util: 2.15.1_y7hmz3pgikxz4dg77iijw34oam
-      netlify-cms-lib-widgets: 1.8.1_whj3mruzilourbt6qwzydjgxty
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-lib-auth: 2.4.2_9640fb8015b35ffb60f8062fa03ee6c3
+      netlify-cms-lib-util: 2.15.1_immutable@3.8.2+lodash@4.17.21
+      netlify-cms-lib-widgets: 1.8.1_b1d3b6469942dd48867e85b381a4d79e
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       node-polyglot: 2.4.2
       prop-types: 15.8.1
       react: 16.14.0
       react-dnd: 14.0.5_react@16.14.0
       react-dnd-html5-backend: 14.1.0
       react-dom: 16.14.0_react@16.14.0
-      react-frame-component: 5.2.3_ccrd4luiijsxnlhe6bgkvyy2z4
-      react-hot-loader: 4.13.0_wcqkhtmu7mswc6yz4uyexck3ty
+      react-frame-component: 5.2.3_10a23e2e88426576ace4f04caae31acf
+      react-hot-loader: 4.13.0_react-dom@16.14.0+react@16.14.0
       react-immutable-proptypes: 2.2.0_immutable@3.8.2
       react-is: 16.13.1
       react-markdown: 6.0.3_react@16.14.0
-      react-modal: 3.16.1_wcqkhtmu7mswc6yz4uyexck3ty
-      react-polyglot: 0.7.2_imahbw4h4ivr4cd6qzr4rywmti
-      react-redux: 7.2.9_wcqkhtmu7mswc6yz4uyexck3ty
+      react-modal: 3.16.1_react-dom@16.14.0+react@16.14.0
+      react-polyglot: 0.7.2_430070db87e22b1e087e8663c8e2cc9a
+      react-redux: 7.2.9_react-dom@16.14.0+react@16.14.0
       react-router-dom: 5.3.4_react@16.14.0
-      react-scroll-sync: 0.9.0_wcqkhtmu7mswc6yz4uyexck3ty
-      react-sortable-hoc: 2.0.0_ccrd4luiijsxnlhe6bgkvyy2z4
-      react-split-pane: 0.1.92_wcqkhtmu7mswc6yz4uyexck3ty
+      react-scroll-sync: 0.9.0_react-dom@16.14.0+react@16.14.0
+      react-sortable-hoc: 2.0.0_react-dom@16.14.0+react@16.14.0
+      react-split-pane: 0.1.92_react-dom@16.14.0+react@16.14.0
       react-topbar-progress-indicator: 4.1.1_react@16.14.0
-      react-virtualized-auto-sizer: 1.0.7_wcqkhtmu7mswc6yz4uyexck3ty
+      react-virtualized-auto-sizer: 1.0.7_react-dom@16.14.0+react@16.14.0
       react-waypoint: 10.3.0_react@16.14.0
-      react-window: 1.8.7_wcqkhtmu7mswc6yz4uyexck3ty
+      react-window: 1.8.7_react-dom@16.14.0+react@16.14.0
       redux: 4.2.0
       redux-devtools-extension: 2.13.9_redux@4.2.0
-      redux-notifications: 4.0.1_d522ylicf2gqb4pozyghuwkfai
+      redux-notifications: 4.0.1_1f75ac2d022e8d00f1eece0c7a594502
       redux-thunk: 2.4.1_redux@4.2.0
       remark-gfm: 1.0.0
       sanitize-filename: 1.6.3
@@ -4644,7 +4642,7 @@ packages:
       react: 16.14.0
     dev: true
 
-  /netlify-cms-lib-auth/2.4.2_szapxaavwnp7wyhyayx2apxgym:
+  /netlify-cms-lib-auth/2.4.2_9640fb8015b35ffb60f8062fa03ee6c3:
     resolution: {integrity: sha512-Ygq6qhYndgyxIHtWZ09dMGh6FgBnsEpaSUryvTholvAK4smRJMkOjlwZTSoblM82k/hE7hl/PD8EVIozafVcXg==}
     peerDependencies:
       immutable: ^3.7.6
@@ -4656,7 +4654,7 @@ packages:
       uuid: 3.4.0
     dev: true
 
-  /netlify-cms-lib-util/2.15.1_y7hmz3pgikxz4dg77iijw34oam:
+  /netlify-cms-lib-util/2.15.1_immutable@3.8.2+lodash@4.17.21:
     resolution: {integrity: sha512-Kg9aK40VjNRoD/BQ8MrYqj5K1ac62cjWrH3x+NqFEIyBQkpGtWcKzm6vrAcNe61LirW64YccsVAf+ll+ZDMJGA==}
     peerDependencies:
       immutable: ^3.7.6
@@ -4669,7 +4667,7 @@ packages:
       semaphore: 1.1.0
     dev: true
 
-  /netlify-cms-lib-widgets/1.8.1_whj3mruzilourbt6qwzydjgxty:
+  /netlify-cms-lib-widgets/1.8.1_b1d3b6469942dd48867e85b381a4d79e:
     resolution: {integrity: sha512-1tDCQJ90Flv8EcDTbCc395+oB3PpS08B3KnuMX0h1r601Z1/ORw+vSYQOTDlL+TvC13epmtmUwG29O0LjEl0QA==}
     peerDependencies:
       immutable: ^3.7.6
@@ -4698,7 +4696,7 @@ packages:
       uploadcare-widget-tab-effects: 1.5.0_uploadcare-widget@3.20.0
     dev: true
 
-  /netlify-cms-ui-default/2.15.5_63qvwooqedduxwddf6yc67ekpi:
+  /netlify-cms-ui-default/2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a:
     resolution: {integrity: sha512-hrdS1zEF/Pb3jpxqHdRrb4cOxsTUBHgSr7doyRfZaa2il6S5s/Pgq49Otu6xr0CHiGNB721U4mXxFn8nCigcYw==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4708,18 +4706,18 @@ packages:
       react: ^16.8.4 || ^17.0.0
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled': 10.3.0_qzeatvug73zaio2r3dlvejynye
+      '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
       lodash: 4.17.21
       prop-types: 15.8.1
       react: 16.14.0
       react-aria-menubutton: 7.0.3_react@16.14.0
-      react-toggled: 1.2.7_4vyaxm4rsh2mpfdenvlqy7kmya
-      react-transition-group: 4.4.5_wcqkhtmu7mswc6yz4uyexck3ty
+      react-toggled: 1.2.7_prop-types@15.8.1+react@16.14.0
+      react-transition-group: 4.4.5_react-dom@16.14.0+react@16.14.0
     transitivePeerDependencies:
       - react-dom
     dev: true
 
-  /netlify-cms-widget-boolean/2.4.1_4ivmv7ywfjriw4ajonafzvrml4:
+  /netlify-cms-widget-boolean/2.4.1_e22acaff162a628b700973405cd62c5f:
     resolution: {integrity: sha512-/0S10iXZVivlUKI6smyb+cE6bZQT9W8/Y2JJJYpP6vpoOynH0F78hSDUERv+3C428SPotyHeCLRneHoH44fkfQ==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4731,13 +4729,13 @@ packages:
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
       lodash: 4.17.21
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       prop-types: 15.8.1
       react: 16.14.0
       react-immutable-proptypes: 2.2.0_immutable@3.8.2
     dev: true
 
-  /netlify-cms-widget-code/1.3.4_7r4gcl3w74u5z3lo7rnps5rbne:
+  /netlify-cms-widget-code/1.3.4_fc78612f76ff29dced6efc5af9762169:
     resolution: {integrity: sha512-WNrL4QIaTE9cIi4ubaLZ9WyFzoVSVLh25nRy+GsrIHJ0ltd0Y8iL/JzGsH7onpmOMX5KgaYeaHkoPGcrpc3MIQ==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4749,17 +4747,17 @@ packages:
       '@emotion/core': 10.3.1_react@16.14.0
       codemirror: 5.65.9
       lodash: 4.17.21
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       react: 16.14.0
-      react-codemirror2: 7.2.1_f3ua6ydmjoivrc3dyetk43yerq
-      react-select: 4.3.1_wcqkhtmu7mswc6yz4uyexck3ty
+      react-codemirror2: 7.2.1_codemirror@5.65.9+react@16.14.0
+      react-select: 4.3.1_react-dom@16.14.0+react@16.14.0
     transitivePeerDependencies:
       - '@babel/core'
       - '@types/react'
       - react-dom
     dev: true
 
-  /netlify-cms-widget-colorstring/1.1.2_dxe62dqlionp2ksfhhagpnszwu:
+  /netlify-cms-widget-colorstring/1.1.2_1dc9ed0e0b439afd2a4539c067b659b5:
     resolution: {integrity: sha512-KsLSU4XQ6EL4aQYAb4tlTaZoO0FE1pbwe9eCZ8njg4nOc2HUcHyzjOEgwFfdnWdyokQFRTbweZ01/9caknZE8w==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4769,15 +4767,15 @@ packages:
       react: ^16.8.4 || ^17.0.0
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled': 10.3.0_qzeatvug73zaio2r3dlvejynye
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       prop-types: 15.8.1
       react: 16.14.0
       react-color: 2.19.3_react@16.14.0
       validate-color: 2.2.1
     dev: true
 
-  /netlify-cms-widget-date/2.6.3_y226rfw2rndkjvoqcknxmw2lhe:
+  /netlify-cms-widget-date/2.6.3_c6b5e896da8b46a4d5d0129b765b4b39:
     resolution: {integrity: sha512-ea9muRQZsQtk61s8VhgwtoMfz7FJpPF7xx4xFhQ7UTrGUOat/mtLxhIb+XASIdhzQ8lK+W+BfnH0nZqKpOR/9g==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4789,16 +4787,16 @@ packages:
       react-dom: ^16.8.4 || ^17.0.0
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled': 10.3.0_qzeatvug73zaio2r3dlvejynye
+      '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
       moment: 2.29.4
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       prop-types: 15.8.1
       react: 16.14.0
-      react-datetime: 3.1.1_azurimqra4ttj7yojwzaup5rtm
+      react-datetime: 3.1.1_moment@2.29.4+react@16.14.0
       react-dom: 16.14.0_react@16.14.0
     dev: true
 
-  /netlify-cms-widget-datetime/2.7.4_6dofh2ik7dxf6f5sc5tdgz5meq:
+  /netlify-cms-widget-datetime/2.7.4_f0dc53e90af8ee5f17b217663367ac24:
     resolution: {integrity: sha512-7rMbpQvjEY85ogts3MBcO+JoIny9k2iG7QHozEhsPxn0EGxhTOVQV8PJGQpesEJNIPXm0N4n3/JDyF6y4xWSIg==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4806,14 +4804,14 @@ packages:
       react: ^16.8.4 || ^17.0.0
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      netlify-cms-widget-date: 2.6.3_y226rfw2rndkjvoqcknxmw2lhe
+      netlify-cms-widget-date: 2.6.3_c6b5e896da8b46a4d5d0129b765b4b39
       react: 16.14.0
-      react-datetime: 3.1.1_azurimqra4ttj7yojwzaup5rtm
+      react-datetime: 3.1.1_moment@2.29.4+react@16.14.0
     transitivePeerDependencies:
       - moment
     dev: true
 
-  /netlify-cms-widget-file/2.12.1_xb6xm746upvaiyqovrgebe2mnm:
+  /netlify-cms-widget-file/2.12.1_b87d767f9ea3ea04620eac4c40934c6b:
     resolution: {integrity: sha512-u80aN3X0xSi+LoxJrvjRR5q1xPjR4daDxiyhtXutiA8qg2/kerYOftdAWhsZ2aMyIpvXMPasNCqpcic+wnknBA==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4826,21 +4824,21 @@ packages:
       uuid: ^3.3.2
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled': 10.3.0_qzeatvug73zaio2r3dlvejynye
+      '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
       array-move: 4.0.0
       common-tags: 1.8.2
       immutable: 3.8.2
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       prop-types: 15.8.1
       react: 16.14.0
       react-immutable-proptypes: 2.2.0_immutable@3.8.2
-      react-sortable-hoc: 2.0.0_ccrd4luiijsxnlhe6bgkvyy2z4
+      react-sortable-hoc: 2.0.0_react-dom@16.14.0+react@16.14.0
       uuid: 3.4.0
     transitivePeerDependencies:
       - react-dom
     dev: true
 
-  /netlify-cms-widget-image/2.8.1_oerjfzdiy3xh5i47bh5u32f4qe:
+  /netlify-cms-widget-image/2.8.1_712292e468c6ee7ea39f09fb4de8bc81:
     resolution: {integrity: sha512-wuB++G1h3VJJW/EdmEyc7jNMyQtULdcxnAjTdTHnJpwn+WbC0t1m3phxP2gqQF4je9K6+5YppBwtw3xf0hNjCA==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4852,15 +4850,15 @@ packages:
       react: ^16.8.4 || ^17.0.0
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled': 10.3.0_qzeatvug73zaio2r3dlvejynye
+      '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
       immutable: 3.8.2
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
-      netlify-cms-widget-file: 2.12.1_xb6xm746upvaiyqovrgebe2mnm
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
+      netlify-cms-widget-file: 2.12.1_b87d767f9ea3ea04620eac4c40934c6b
       prop-types: 15.8.1
       react: 16.14.0
     dev: true
 
-  /netlify-cms-widget-list/2.10.1_jlvdp67ukena4a6sh6eqvycqli:
+  /netlify-cms-widget-list/2.10.1_4aea37fbf4511a0e03d23f890ae0505a:
     resolution: {integrity: sha512-seDpwnxHASkDEQl/+bkWYt0JNr1LLKyjtlmz/JaLEciEa5sSauC6rmYtamHY2y/6mN2QZZdSGP0uw4+qNlaubQ==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4875,21 +4873,21 @@ packages:
       react-immutable-proptypes: ^2.1.0
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled': 10.3.0_qzeatvug73zaio2r3dlvejynye
+      '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
       immutable: 3.8.2
       lodash: 4.17.21
-      netlify-cms-lib-widgets: 1.8.1_whj3mruzilourbt6qwzydjgxty
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
-      netlify-cms-widget-object: 2.7.2_fqxxx3e6kdik3orzgncvbxibi4
+      netlify-cms-lib-widgets: 1.8.1_b1d3b6469942dd48867e85b381a4d79e
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
+      netlify-cms-widget-object: 2.7.2_2c2f7bec9e50d0adba39334550dd0147
       prop-types: 15.8.1
       react: 16.14.0
       react-immutable-proptypes: 2.2.0_immutable@3.8.2
-      react-sortable-hoc: 2.0.0_ccrd4luiijsxnlhe6bgkvyy2z4
+      react-sortable-hoc: 2.0.0_react-dom@16.14.0+react@16.14.0
     transitivePeerDependencies:
       - react-dom
     dev: true
 
-  /netlify-cms-widget-map/1.5.1_4ivmv7ywfjriw4ajonafzvrml4:
+  /netlify-cms-widget-map/1.5.1_e22acaff162a628b700973405cd62c5f:
     resolution: {integrity: sha512-zasnqrdTd3HruFjaZi+JvXgwXXxh+TF+aZ9ueFeaIIgvzLLSwYaxDlqX9Bby1iark/4jVhPb9/yuqEM0cLBHxg==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4901,14 +4899,14 @@ packages:
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
       lodash: 4.17.21
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       ol: 6.15.1
       prop-types: 15.8.1
       react: 16.14.0
       react-immutable-proptypes: 2.2.0_immutable@3.8.2
     dev: true
 
-  /netlify-cms-widget-markdown/2.15.1_qqcwogdvskxeou2p4vwdvw3uvi:
+  /netlify-cms-widget-markdown/2.15.1_840567187592ae47534fe56c3adb74aa:
     resolution: {integrity: sha512-hw5neYVKPFJVNiyymQ1TUzChoQmY23BV6K2VxJQvb+WEABhFIv0kJY42q3QKfqN53Wh4sPGv+yFxwaeIVPvQBQ==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4922,14 +4920,14 @@ packages:
       react-immutable-proptypes: ^2.1.0
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled': 10.3.0_qzeatvug73zaio2r3dlvejynye
+      '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
       dompurify: 2.4.0
       immutable: 3.8.2
       is-hotkey: 0.2.0
       lodash: 4.17.21
       mdast-util-definitions: 1.2.5
       mdast-util-to-string: 1.1.0
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       prop-types: 15.8.1
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
@@ -4942,29 +4940,27 @@ packages:
       remark-stringify: 6.0.4
       slate: 0.47.9_immutable@3.8.2
       slate-base64-serializer: 0.2.115_slate@0.47.9
-      slate-plain-serializer: 0.7.13_xpfunylcfixkkdo57xd3hfvb6m
-      slate-react: 0.22.10_da3bpn74ullsbjmqeqqxr76s7m
-      slate-soft-break: 0.9.0_zare6adgkggb4lvmbvmdll77s4
+      slate-plain-serializer: 0.7.13_immutable@3.8.2+slate@0.47.9
+      slate-react: 0.22.10_183617b7fca2d720a590242178ffd2fb
+      slate-soft-break: 0.9.0_slate-react@0.22.10+slate@0.47.9
       unified: 7.1.0
       unist-builder: 1.0.4
       unist-util-visit-parents: 2.1.2
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
-  /netlify-cms-widget-number/2.5.0_n3cg5p7z5ulk6uzig4wpbqjjbu:
+  /netlify-cms-widget-number/2.5.0_6ec46ebff9ed16af5328372cf0c1290d:
     resolution: {integrity: sha512-4F7c+xkLba4UQTxhqfO8HTKfzCgQLeyDfdvJJOm/RXJjvcK+tp4MnTPqMI3OHBKi56Ay/oV1Q8OHIQ6grT9bpQ==}
     peerDependencies:
       netlify-cms-ui-default: ^2.12.1
       prop-types: ^15.7.2
       react: ^16.8.4 || ^17.0.0
     dependencies:
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       prop-types: 15.8.1
       react: 16.14.0
     dev: true
 
-  /netlify-cms-widget-object/2.7.2_fqxxx3e6kdik3orzgncvbxibi4:
+  /netlify-cms-widget-object/2.7.2_2c2f7bec9e50d0adba39334550dd0147:
     resolution: {integrity: sha512-x2jyRHcIBymdEZSFVoJrm6gVlCeySs4n/p8t+wM1n0HB5av9z5hnL/AypiwnNAUC2Bf+0AtrfFnQg2K6gZUcGQ==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -4977,16 +4973,16 @@ packages:
       react-immutable-proptypes: ^2.1.0
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled': 10.3.0_qzeatvug73zaio2r3dlvejynye
+      '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
       immutable: 3.8.2
       lodash: 4.17.21
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       prop-types: 15.8.1
       react: 16.14.0
       react-immutable-proptypes: 2.2.0_immutable@3.8.2
     dev: true
 
-  /netlify-cms-widget-relation/2.11.1_pbin6g6qakukzewsg23ukto3oe:
+  /netlify-cms-widget-relation/2.11.1_7850df1bd002a8ac92d236b7454ddb71:
     resolution: {integrity: sha512-oHnEgYKSqyU/XOyIHE/jvqLhFAk4YbaU0Xmwv+YBY38F1KuSQ0LUnm0slXlKO5jfl4jdCXnBGzgEcw8XEOviDw==}
     peerDependencies:
       '@emotion/core': ^10.0.35
@@ -5000,16 +4996,16 @@ packages:
       uuid: ^3.3.2
     dependencies:
       '@emotion/core': 10.3.1_react@16.14.0
-      '@emotion/styled': 10.3.0_qzeatvug73zaio2r3dlvejynye
+      '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
       immutable: 3.8.2
       lodash: 4.17.21
-      netlify-cms-lib-widgets: 1.8.1_whj3mruzilourbt6qwzydjgxty
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-lib-widgets: 1.8.1_b1d3b6469942dd48867e85b381a4d79e
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       prop-types: 15.8.1
       react: 16.14.0
-      react-select: 4.3.1_wcqkhtmu7mswc6yz4uyexck3ty
-      react-sortable-hoc: 2.0.0_ccrd4luiijsxnlhe6bgkvyy2z4
-      react-window: 1.8.7_wcqkhtmu7mswc6yz4uyexck3ty
+      react-select: 4.3.1_react-dom@16.14.0+react@16.14.0
+      react-sortable-hoc: 2.0.0_react-dom@16.14.0+react@16.14.0
+      react-window: 1.8.7_react-dom@16.14.0+react@16.14.0
       uuid: 3.4.0
     transitivePeerDependencies:
       - '@babel/core'
@@ -5017,7 +5013,7 @@ packages:
       - react-dom
     dev: true
 
-  /netlify-cms-widget-select/2.8.2_4gdniz67egopkrlp2raju6ncmy:
+  /netlify-cms-widget-select/2.8.2_e186d467df219cf5456fd4409a79a266:
     resolution: {integrity: sha512-uBMJPdoH4hEw35HbyE9FSFHj+xSPWhzp8FK8O7XkU3LlcvZarYoOaw59BGs8/7VUE10t4gCgGNqkYSMRiQ5eCg==}
     peerDependencies:
       immutable: ^3.7.6
@@ -5028,38 +5024,38 @@ packages:
       react-immutable-proptypes: ^2.1.0
     dependencies:
       immutable: 3.8.2
-      netlify-cms-lib-widgets: 1.8.1_whj3mruzilourbt6qwzydjgxty
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-lib-widgets: 1.8.1_b1d3b6469942dd48867e85b381a4d79e
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       prop-types: 15.8.1
       react: 16.14.0
       react-immutable-proptypes: 2.2.0_immutable@3.8.2
-      react-select: 4.3.1_wcqkhtmu7mswc6yz4uyexck3ty
+      react-select: 4.3.1_react-dom@16.14.0+react@16.14.0
     transitivePeerDependencies:
       - '@babel/core'
       - '@types/react'
       - react-dom
     dev: true
 
-  /netlify-cms-widget-string/2.3.0_n3cg5p7z5ulk6uzig4wpbqjjbu:
+  /netlify-cms-widget-string/2.3.0_6ec46ebff9ed16af5328372cf0c1290d:
     resolution: {integrity: sha512-3TeDNob5wj8jyoqsuy7hPTtXNMwSx8yXzUrBPWVSMedvFYccqylQS3TamwMMM63S83zNC0SrqatYMSUiEG5dhw==}
     peerDependencies:
       netlify-cms-ui-default: ^2.12.1
       prop-types: ^15.7.2
       react: ^16.8.4 || ^17.0.0
     dependencies:
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       prop-types: 15.8.1
       react: 16.14.0
     dev: true
 
-  /netlify-cms-widget-text/2.4.1_n3cg5p7z5ulk6uzig4wpbqjjbu:
+  /netlify-cms-widget-text/2.4.1_6ec46ebff9ed16af5328372cf0c1290d:
     resolution: {integrity: sha512-fFuHtID0GfjFwugEyQmHld2nKFe8p42NnvXsayneldcl1YL2jIOk1oastJV1sRx1FB7BIyj1WzJWoaWXNMWwng==}
     peerDependencies:
       netlify-cms-ui-default: ^2.12.1
       prop-types: ^15.7.2
       react: ^16.8.4 || ^17.0.0
     dependencies:
-      netlify-cms-ui-default: 2.15.5_63qvwooqedduxwddf6yc67ekpi
+      netlify-cms-ui-default: 2.15.5_f6e15b39d020c74bd8632fb02f7c8a7a
       prop-types: 15.8.1
       react: 16.14.0
       react-textarea-autosize: 8.3.4_react@16.14.0
@@ -5072,7 +5068,7 @@ packages:
     dependencies:
       codemirror: 5.65.9
       create-react-class: 15.7.0
-      netlify-cms-app: 2.15.72_wcqkhtmu7mswc6yz4uyexck3ty
+      netlify-cms-app: 2.15.72_react-dom@16.14.0+react@16.14.0
       netlify-cms-media-library-cloudinary: 1.3.10
       netlify-cms-media-library-uploadcare: 0.5.10
       react: 16.14.0
@@ -5136,6 +5132,7 @@ packages:
   /normalize-path/3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
+    dev: true
 
   /npm-run-path/5.1.0:
     resolution: {integrity: sha512-sJOdmRGrY2sjNTRMbSvluQqg+8X7ZK61yvzBEIDhz4f8z1TZFYABsqjjCBd/0PUNE9M6QDgHJXQkGUEm7Q+l9Q==}
@@ -5575,7 +5572,7 @@ packages:
       teeny-tap: 0.2.0
     dev: true
 
-  /react-codemirror2/7.2.1_f3ua6ydmjoivrc3dyetk43yerq:
+  /react-codemirror2/7.2.1_codemirror@5.65.9+react@16.14.0:
     resolution: {integrity: sha512-t7YFmz1AXdlImgHXA9Ja0T6AWuopilub24jRaQdPVbzUJVNKIYuy3uCFZYa7CE5S3UW6SrSa5nAqVQvtzRF9gw==}
     peerDependencies:
       codemirror: 5.x
@@ -5596,11 +5593,11 @@ packages:
       material-colors: 1.2.6
       prop-types: 15.8.1
       react: 16.14.0
-      reactcss: 1.2.3_react@16.14.0
+      reactcss: 1.2.3
       tinycolor2: 1.4.2
     dev: true
 
-  /react-datetime/3.1.1_azurimqra4ttj7yojwzaup5rtm:
+  /react-datetime/3.1.1_moment@2.29.4+react@16.14.0:
     resolution: {integrity: sha512-gHCTjAniCcMb6jdXpz+MpVe/uCeaHNDOofg+l41nLlJI3uBLBMV40CQbGB2TCTUpCzGT1mCs4vQzKGMjXO/WWQ==}
     peerDependencies:
       moment: ^2.16.0
@@ -5652,7 +5649,7 @@ packages:
       scheduler: 0.19.1
     dev: true
 
-  /react-frame-component/5.2.3_ccrd4luiijsxnlhe6bgkvyy2z4:
+  /react-frame-component/5.2.3_10a23e2e88426576ace4f04caae31acf:
     resolution: {integrity: sha512-r+h0o3r/uqOLNT724z4CRVkxQouKJvoi3OPfjqWACD30Y87rtEmeJrNZf1WYPGknn1Y8200HAjx7hY/dPUGgmA==}
     peerDependencies:
       prop-types: ^15.5.9
@@ -5664,7 +5661,7 @@ packages:
       react-dom: 16.14.0_react@16.14.0
     dev: true
 
-  /react-hot-loader/4.13.0_wcqkhtmu7mswc6yz4uyexck3ty:
+  /react-hot-loader/4.13.0_react-dom@16.14.0+react@16.14.0:
     resolution: {integrity: sha512-JrLlvUPqh6wIkrK2hZDfOyq/Uh/WeVEr8nc7hkn2/3Ul0sx1Kr5y4kOGNacNRoj7RhwLNcQ3Udf1KJXrqc0ZtA==}
     engines: {node: '>= 6'}
     peerDependencies:
@@ -5745,7 +5742,7 @@ packages:
       - supports-color
     dev: true
 
-  /react-modal/3.16.1_wcqkhtmu7mswc6yz4uyexck3ty:
+  /react-modal/3.16.1_react-dom@16.14.0+react@16.14.0:
     resolution: {integrity: sha512-VStHgI3BVcGo7OXczvnJN7yT2TWHJPDXZWyI/a0ssFNhGZWsPmB8cF0z33ewDXq4VfYMO1vXgiv/g8Nj9NDyWg==}
     engines: {node: '>=8'}
     peerDependencies:
@@ -5760,7 +5757,7 @@ packages:
       warning: 4.0.3
     dev: true
 
-  /react-polyglot/0.7.2_imahbw4h4ivr4cd6qzr4rywmti:
+  /react-polyglot/0.7.2_430070db87e22b1e087e8663c8e2cc9a:
     resolution: {integrity: sha512-d/075aofJ4of9wOSBewl+ViFkkM0L1DgE3RVDOXrHZ92w4o2643sTQJ6lSPw8wsJWFmlB/3Pvwm0UbGNvLfPBw==}
     peerDependencies:
       node-polyglot: ^2.0.0
@@ -5788,7 +5785,7 @@ packages:
       redux: 4.2.0
     dev: true
 
-  /react-redux/7.2.9_wcqkhtmu7mswc6yz4uyexck3ty:
+  /react-redux/7.2.9_react-dom@16.14.0+react@16.14.0:
     resolution: {integrity: sha512-Gx4L3uM182jEEayZfRbI/G11ZpYdNAnBs70lFVMNdHJI76XYtR+7m0MN+eAs7UHBPhWXcnFPaS+9owSCJQHNpQ==}
     peerDependencies:
       react: ^16.8.3 || ^17 || ^18
@@ -5842,7 +5839,7 @@ packages:
       tiny-warning: 1.0.3
     dev: true
 
-  /react-scroll-sync/0.9.0_wcqkhtmu7mswc6yz4uyexck3ty:
+  /react-scroll-sync/0.9.0_react-dom@16.14.0+react@16.14.0:
     resolution: {integrity: sha512-IaMUSTbarj9mhjVtBl9I45Er8gQqV8rdb9A0eK77JJ8MvnLcFIlnoiXVx1NS9ACy9QELq7xCTxdIVEdhDV9R0Q==}
     peerDependencies:
       react: 0.14.x || 15.x || 16.x || 17.x
@@ -5853,7 +5850,7 @@ packages:
       react-dom: 16.14.0_react@16.14.0
     dev: true
 
-  /react-select/4.3.1_wcqkhtmu7mswc6yz4uyexck3ty:
+  /react-select/4.3.1_react-dom@16.14.0+react@16.14.0:
     resolution: {integrity: sha512-HBBd0dYwkF5aZk1zP81Wx5UsLIIT2lSvAY2JiJo199LjoLHoivjn9//KsmvQMEFGNhe58xyuOITjfxKCcGc62Q==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
@@ -5867,16 +5864,15 @@ packages:
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
       react-input-autosize: 3.0.0_react@16.14.0
-      react-transition-group: 4.4.5_wcqkhtmu7mswc6yz4uyexck3ty
+      react-transition-group: 4.4.5_react-dom@16.14.0+react@16.14.0
     transitivePeerDependencies:
       - '@babel/core'
       - '@types/react'
     dev: true
 
-  /react-sortable-hoc/2.0.0_ccrd4luiijsxnlhe6bgkvyy2z4:
+  /react-sortable-hoc/2.0.0_react-dom@16.14.0+react@16.14.0:
     resolution: {integrity: sha512-JZUw7hBsAHXK7PTyErJyI7SopSBFRcFHDjWW5SWjcugY0i6iH7f+eJkY8cJmGMlZ1C9xz1J3Vjz0plFpavVeRg==}
     peerDependencies:
-      prop-types: ^15.5.7
       react: ^16.3.0 || ^17.0.0
       react-dom: ^16.3.0 || ^17.0.0
     dependencies:
@@ -5887,7 +5883,7 @@ packages:
       react-dom: 16.14.0_react@16.14.0
     dev: true
 
-  /react-split-pane/0.1.92_wcqkhtmu7mswc6yz4uyexck3ty:
+  /react-split-pane/0.1.92_react-dom@16.14.0+react@16.14.0:
     resolution: {integrity: sha512-GfXP1xSzLMcLJI5BM36Vh7GgZBpy+U/X0no+VM3fxayv+p1Jly5HpMofZJraeaMl73b3hvlr+N9zJKvLB/uz9w==}
     peerDependencies:
       react: ^16.0.0-0
@@ -5920,7 +5916,7 @@ packages:
       - '@types/react'
     dev: true
 
-  /react-toggled/1.2.7_4vyaxm4rsh2mpfdenvlqy7kmya:
+  /react-toggled/1.2.7_prop-types@15.8.1+react@16.14.0:
     resolution: {integrity: sha512-3am1uA5ZzDwUkReEuUkK+fJ0DAYcGiLraWEPqXfL1kKD/NHbbB7fB/t+5FflMGd+FA6n9hih1es4pui1yzKi0w==}
     peerDependencies:
       prop-types: '>=15'
@@ -5939,7 +5935,7 @@ packages:
       topbar: 0.1.4
     dev: true
 
-  /react-transition-group/1.2.1_wcqkhtmu7mswc6yz4uyexck3ty:
+  /react-transition-group/1.2.1_react-dom@16.14.0+react@16.14.0:
     resolution: {integrity: sha512-CWaL3laCmgAFdxdKbhhps+c0HRGF4c+hdM4H23+FI1QBNUyx/AMeIJGWorehPNSaKnQNOAxL7PQmqMu78CDj3Q==}
     peerDependencies:
       react: ^15.0.0 || ^16.0.0
@@ -5954,7 +5950,7 @@ packages:
       warning: 3.0.0
     dev: true
 
-  /react-transition-group/4.4.5_wcqkhtmu7mswc6yz4uyexck3ty:
+  /react-transition-group/4.4.5_react-dom@16.14.0+react@16.14.0:
     resolution: {integrity: sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==}
     peerDependencies:
       react: '>=16.6.0'
@@ -5968,7 +5964,7 @@ packages:
       react-dom: 16.14.0_react@16.14.0
     dev: true
 
-  /react-virtualized-auto-sizer/1.0.7_wcqkhtmu7mswc6yz4uyexck3ty:
+  /react-virtualized-auto-sizer/1.0.7_react-dom@16.14.0+react@16.14.0:
     resolution: {integrity: sha512-Mxi6lwOmjwIjC1X4gABXMJcKHsOo0xWl3E3ugOgufB8GJU+MqrtY35aBuvCYv/razQ1Vbp7h1gWJjGjoNN5pmA==}
     engines: {node: '>8.0.0'}
     peerDependencies:
@@ -5991,7 +5987,7 @@ packages:
       react-is: 18.2.0
     dev: true
 
-  /react-window/1.8.7_wcqkhtmu7mswc6yz4uyexck3ty:
+  /react-window/1.8.7_react-dom@16.14.0+react@16.14.0:
     resolution: {integrity: sha512-JHEZbPXBpKMmoNO1bNhoXOOLg/ujhL/BU4IqVU9r8eQPcy5KQnGHIHDRkJ0ns9IM5+Aq5LNwt3j8t3tIrePQzA==}
     engines: {node: '>8.0.0'}
     peerDependencies:
@@ -6013,13 +6009,10 @@ packages:
       prop-types: 15.8.1
     dev: true
 
-  /reactcss/1.2.3_react@16.14.0:
+  /reactcss/1.2.3:
     resolution: {integrity: sha512-KiwVUcFu1RErkI97ywr8nvx8dNOpT03rbnma0SSalTYjkrPYaEajR4a/MRt6DZ46K6arDRbWMNHF+xH7G7n/8A==}
-    peerDependencies:
-      react: '*'
     dependencies:
       lodash: 4.17.21
-      react: 16.14.0
     dev: true
 
   /readable-stream/3.6.0:
@@ -6036,6 +6029,7 @@ packages:
     engines: {node: '>=8.10.0'}
     dependencies:
       picomatch: 2.3.1
+    dev: true
 
   /recast/0.20.5:
     resolution: {integrity: sha512-E5qICoPoNL4yU0H0NoBDntNB0Q5oMSNh9usFctYniLBluTthi3RsQVBXIJNbApOlvSwW/RGxIuokPcAc59J5fQ==}
@@ -6056,7 +6050,7 @@ packages:
       redux: 4.2.0
     dev: true
 
-  /redux-notifications/4.0.1_d522ylicf2gqb4pozyghuwkfai:
+  /redux-notifications/4.0.1_1f75ac2d022e8d00f1eece0c7a594502:
     resolution: {integrity: sha512-mRVaEcsvu5B4P8x8kW0uY83EQqaWL/0+/NvL4bdbHGJVg+Rwx54MgBU1s+tB6RAA2E6NX/DmQrO4EbFDcQSi+w==}
     peerDependencies:
       react: ^0.14.0 || ^15.0.0-0 || ^15.4.0-0 || ^16.0.0-0
@@ -6067,7 +6061,7 @@ packages:
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
       react-redux: 4.4.10_react@16.14.0+redux@4.2.0
-      react-transition-group: 1.2.1_wcqkhtmu7mswc6yz4uyexck3ty
+      react-transition-group: 1.2.1_react-dom@16.14.0+react@16.14.0
     transitivePeerDependencies:
       - redux
     dev: true
@@ -6448,6 +6442,7 @@ packages:
       chokidar: 3.5.3
       immutable: 4.1.0
       source-map-js: 1.0.2
+    dev: true
 
   /sax/1.2.4:
     resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
@@ -6587,7 +6582,7 @@ packages:
       slate-dev-environment: 0.2.5
     dev: true
 
-  /slate-plain-serializer/0.7.13_xpfunylcfixkkdo57xd3hfvb6m:
+  /slate-plain-serializer/0.7.13_immutable@3.8.2+slate@0.47.9:
     resolution: {integrity: sha512-TtrlaslxQBEMV0LYdf3s7VAbTxRPe1xaW10WNNGAzGA855/0RhkaHjKkQiRjHv5rvbRleVf7Nxr9fH+4uErfxQ==}
     peerDependencies:
       immutable: '>=3.8.1'
@@ -6597,7 +6592,7 @@ packages:
       slate: 0.47.9_immutable@3.8.2
     dev: true
 
-  /slate-prop-types/0.5.44_xpfunylcfixkkdo57xd3hfvb6m:
+  /slate-prop-types/0.5.44_immutable@3.8.2+slate@0.47.9:
     resolution: {integrity: sha512-JS0iW7uaciE/W3ADuzeN1HOnSjncQhHPXJ65nZNQzB0DF7mXVmbwQKI6cmCo/xKni7XRJT0JbWSpXFhEdPiBUA==}
     peerDependencies:
       immutable: '>=3.8.1'
@@ -6607,7 +6602,7 @@ packages:
       slate: 0.47.9_immutable@3.8.2
     dev: true
 
-  /slate-react-placeholder/0.2.9_df3hsuddx4u6ybo2uivv7rgldq:
+  /slate-react-placeholder/0.2.9_1976795063bf29ec05daa22b5fc4cb1c:
     resolution: {integrity: sha512-YSJ9Gb4tGpbzPje3eNKtu26hWM8ApxTk9RzjK+6zfD5V/RMTkuWONk24y6c9lZk0OAYNZNUmrnb/QZfU3j9nag==}
     peerDependencies:
       react: '>=16.0.0'
@@ -6616,10 +6611,10 @@ packages:
     dependencies:
       react: 16.14.0
       slate: 0.47.9_immutable@3.8.2
-      slate-react: 0.22.10_da3bpn74ullsbjmqeqqxr76s7m
+      slate-react: 0.22.10_183617b7fca2d720a590242178ffd2fb
     dev: true
 
-  /slate-react/0.22.10_da3bpn74ullsbjmqeqqxr76s7m:
+  /slate-react/0.22.10_183617b7fca2d720a590242178ffd2fb:
     resolution: {integrity: sha512-B2Ms1u/REbdd8yKkOItKgrw/tX8klgz5l5x6PP86+oh/yqmB6EHe0QyrYlQ9fc3WBlJUVTOL+nyAP1KmlKj2/w==}
     peerDependencies:
       immutable: '>=3.8.1 || >4.0.0-rc'
@@ -6642,23 +6637,21 @@ packages:
       slate-base64-serializer: 0.2.115_slate@0.47.9
       slate-dev-environment: 0.2.5
       slate-hotkeys: 0.2.11
-      slate-plain-serializer: 0.7.13_xpfunylcfixkkdo57xd3hfvb6m
-      slate-prop-types: 0.5.44_xpfunylcfixkkdo57xd3hfvb6m
-      slate-react-placeholder: 0.2.9_df3hsuddx4u6ybo2uivv7rgldq
+      slate-plain-serializer: 0.7.13_immutable@3.8.2+slate@0.47.9
+      slate-prop-types: 0.5.44_immutable@3.8.2+slate@0.47.9
+      slate-react-placeholder: 0.2.9_1976795063bf29ec05daa22b5fc4cb1c
       tiny-invariant: 1.3.1
       tiny-warning: 0.0.3
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
-  /slate-soft-break/0.9.0_zare6adgkggb4lvmbvmdll77s4:
+  /slate-soft-break/0.9.0_slate-react@0.22.10+slate@0.47.9:
     resolution: {integrity: sha512-iTy2bl/G+tphN10YQBOPDRxDqgM46ZH1UUz0ublmL6PLtwJ3jJK1n08w37YxnY/ge4aW31UN386KV6qvFx6Hsw==}
     peerDependencies:
       slate: '>=0.42.2'
       slate-react: '>=0.19.3'
     dependencies:
       slate: 0.47.9_immutable@3.8.2
-      slate-react: 0.22.10_da3bpn74ullsbjmqeqqxr76s7m
+      slate-react: 0.22.10_183617b7fca2d720a590242178ffd2fb
     dev: true
 
   /slate/0.47.9_immutable@3.8.2:
@@ -6675,8 +6668,6 @@ packages:
       tiny-invariant: 1.3.1
       tiny-warning: 0.0.3
       type-of: 2.0.1
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /sorcery/0.10.0:
@@ -6907,7 +6898,7 @@ packages:
       svelte: 3.52.0
     dev: true
 
-  /svelte-preprocess/4.10.7_feehkil2qsgwzgo6ozrzfzvxu4:
+  /svelte-preprocess/4.10.7_290875217a848d6c99de766392e6b7a7:
     resolution: {integrity: sha512-sNPBnqYD6FnmdBrUmBCaqS00RyCsCpj2BG58A1JBswNF7b0OKviwxqVrOL/CKyJrLSClrSeqQv5BXNg2RUbPOw==}
     engines: {node: '>= 9.11.2'}
     requiresBuild: true

@@ -47,7 +47,7 @@
 <style lang="scss">
     .navigation {
         flex: 0 0 auto;
-        block-size: 64px;
+        min-block-size: 64px;
         background-color: var(--accent-primary);
         
         &-logo {

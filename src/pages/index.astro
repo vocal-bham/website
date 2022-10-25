@@ -42,19 +42,11 @@ import PageSection from "~/components/PageSection.astro";
 </Layout>
 
 <style lang="scss">
-    :global(.navigation) {
-        position: absolute;
-        inline-size: 100%;
-        z-index: 1;
-        background-color: transparent !important;
-    }
-
     :global(#hero) {    
         flex: 0 0 auto;
         overflow: hidden;
         :global(.page-section-inner) {
             position: relative;
-            margin-block-start: 64px;
         }
 
         h1, p {
@@ -83,6 +75,7 @@ import PageSection from "~/components/PageSection.astro";
         align-items: center;
         flex-wrap: wrap;
         gap: 8px;
+
         :global(.button) {
             svg {
                 inline-size: 20px;
@@ -112,7 +105,6 @@ import PageSection from "~/components/PageSection.astro";
             }
         }
     }
-
 
     .cards {
         margin-block: 48px;
@@ -148,17 +140,14 @@ import PageSection from "~/components/PageSection.astro";
         stroke: var(--background-primary);
         mix-blend-mode: difference;
         position: absolute;
-        block-size: calc(100% - 48px);
-        inline-size: auto;
+        block-size: min(calc(100% - 48px), 50vw);
+        max-inline-size: 50vw;
         inset-block-start: 48px;
-        inset-inline-end: -80px;
+        inset-inline-end: -40px;
         z-index: -1;
 
         @media only screen and (max-width: 905px) {
-            ineset-inline-end: unset;
-            inset-inline-start: 50%;
-            inset-block-start: 0;
-            transform: translateX(-50%) scale(0.8);
+            display: none;
         }
     }
 </style>
