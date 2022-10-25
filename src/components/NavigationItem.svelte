@@ -24,7 +24,6 @@
         position: relative;
         block-size: 100%;
         margin-inline: 16px;
-        padding-block: 8px;
 
         &::before {
             content: "";
@@ -54,7 +53,7 @@
             position: relative;
             display: flex;
             align-items: center;
-            padding-block: 4px;
+            padding-block: 12px;
             text-decoration: none;
             font-weight: 500;
             font-size: 14px;

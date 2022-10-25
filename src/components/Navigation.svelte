@@ -76,6 +76,7 @@
             
             @media only screen and (max-width: 905px) {
                 padding: 16px;
+                gap: 12px;
             }
         }
 
