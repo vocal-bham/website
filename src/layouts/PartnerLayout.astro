@@ -1,0 +1,14 @@
+---
+import Layout from "./Layout.astro";
+
+import PageSection from "~/components/PageSection.astro";
+
+const { frontmatter: partner } = Astro.props;
+---
+
+<Layout title={partner.name}>
+    <PageSection id="about">
+        <h1>{partner.name}</h1>
+        <slot />
+    </PageSection>
+</Layout>

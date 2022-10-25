@@ -13,6 +13,8 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: ~/layouts/PartnerLayout.astro}
+
       - {label: "Partner Name", name: "name", widget: "string", required: true}
       - {label: "Partner Description", name: "description", widget: "text", required: true}
       - {label: "Partner Website", name: "website", widget: "string", required: false}
