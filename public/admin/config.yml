@@ -46,7 +46,7 @@ collections:
               - {label: "Photo", name: "photo", widget: "image"}
       - label: "Home Page"
         name: "home"
-        file: "src/pages/home.json"
+        file: "src/pages/homeConfig.json"
         fields:
           - label: "Photo 1"
             name: "photo1"
