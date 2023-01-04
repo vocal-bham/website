@@ -51,18 +51,21 @@ collections:
           - label: "Photo 1"
             name: "photo1"
             widget: "list"
+            allow_add: false
             fields:
               - {label: "Image", name: "src", widget: "image"}
               - {label: "Description", name: "alt", widget: "text"}
           - label: "Photo 2"
             name: "photo2"
             widget: "list"
+            allow_add: false
             fields:
               - {label: "Image", name: "src", widget: "image"}
               - {label: "Description", name: "alt", widget: "text"}
           - label: "Photo 3"
             name: "photo3"
             widget: "list"
+            allow_add: false
             fields:
               - {label: "Image", name: "src", widget: "image"}
               - {label: "Description", name: "alt", widget: "text"}
