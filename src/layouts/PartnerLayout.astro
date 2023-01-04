@@ -1,28 +1,58 @@
 ---
+import type { Partner } from "~/types/catalog";
+
 import Layout from "./Layout.astro";
 import Button from "~/components/Button.svelte";
 
 import PageSection from "~/components/PageSection.astro";
 
-const { frontmatter: partner }: Partner = Astro.props;
+const partner = Astro.props.frontmatter as Partner;
 ---
 
 <Layout title={partner.name}>
-    <PageSection id="partner">
+    <PageSection id="partner-header">
         <div class="partner-info">
-            <span>{partner.location}</span>
             <h1>{partner.name}</h1>
             <p>{partner.description}</p>
             {partner.website && (
                 <Button href={partner.website} target="_blank" rel="noreferrer noopener">Go to website</Button>
             )}
+            <ul class="partner-metadata">
+                {partner.location && (
+                    <li class="partner-metadata-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M11.536 3.464a5 5 0 010 7.072L8 14.07l-3.536-3.535a5 5 0 117.072-7.072v.001zm1.06 8.132a6.5 6.5 0 10-9.192 0l3.535 3.536a1.5 1.5 0 002.122 0l3.535-3.536zM8 9a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+                        {partner.location}
+                    </li>
+                )}
+                {partner.email && (
+                    <li class="partner-metadata-item">
+                        <a href={`mailto:${partner.email}`}>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M1.75 2A1.75 1.75 0 000 3.75v.736a.75.75 0 000 .027v7.737C0 13.216.784 14 1.75 14h12.5A1.75 1.75 0 0016 12.25v-8.5A1.75 1.75 0 0014.25 2H1.75zM14.5 4.07v-.32a.25.25 0 00-.25-.25H1.75a.25.25 0 00-.25.25v.32L8 7.88l6.5-3.81zm-13 1.74v6.441c0 .138.112.25.25.25h12.5a.25.25 0 00.25-.25V5.809L8.38 9.397a.75.75 0 01-.76 0L1.5 5.809z"></path></svg>
+                            {partner.email}
+                        </a>
+                    </li>
+                )}
+                {partner.phone && (
+                    <li class="partner-metadata-item">
+                        <a href={`tel:${partner.phone}`}>
+                            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7.772 2.439 1.076-.344c1.01-.322 2.087.199 2.52 1.217l.859 2.028c.374.883.167 1.922-.514 2.568L9.819 9.706c.116 1.076.478 2.135 1.084 3.177a8.678 8.678 0 0 0 2.271 2.595l2.275-.76c.863-.287 1.802.044 2.33.821l1.233 1.81c.615.904.505 2.15-.258 2.916l-.818.821c-.814.817-1.977 1.114-3.052.778-2.539-.792-4.873-3.143-7.003-7.053-2.133-3.916-2.886-7.24-2.258-9.968.264-1.148 1.081-2.063 2.149-2.404Z" fill="#ffffff"/></svg>
+                            {partner.phone}
+                        </a>
+                    </li>
+                )}
+            </ul>
         </div>
         <img class="partner-image" src={partner.image} alt="" />
+    </PageSection>
+    <PageSection id="partner-article">
+        <article>
+            <slot />
+        </article>
     </PageSection>
 </Layout>
 
 <style lang="scss">
-    :global(#partner .page-section-inner) {
+    :global(#partner-header .page-section-inner) {
         display: flex;
         align-items: center;
         gap: 48px;
@@ -39,5 +69,31 @@ const { frontmatter: partner }: Partner = Astro.props;
         max-width: 100%;
         min-width: 0;
         border-radius: 16px;
+    }
+
+    .partner-metadata {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-block-start: 24px;
+
+        &-item, &-item a {
+            color: var(--foreground-tertiary);
+            gap: 8px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+
+            :global(svg) {
+                fill: currentColor;
+                color: var(--foreground-primary);
+                inline-size: 16px;
+                block-size: auto;
+                flex: 0 0 auto;
+            }
+        }
     }
 </style>

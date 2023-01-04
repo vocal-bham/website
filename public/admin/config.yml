@@ -20,7 +20,7 @@ collections:
       - {label: "Partner Website", name: "website", widget: "string", required: false}
       - {label: "Partner E-mail", name: "email", widget: "string", required: false}
       - {label: "Partner Phone Number", name: "phone", widget: "string", required: false}
-      - {label: "Partner Location", name: "location", widget: "map", required: false}
+      - {label: "Partner Location", name: "location", widget: "string", required: false}
 
       - {label: "Featured Image", name: "image", widget: "image", required: true}
       - {label: "Article", name: "body", widget: "markdown", required: true}
@@ -44,3 +44,25 @@ collections:
               - {label: "Name", name: "name", widget: "string"}
               - {label: "Position", name: position, widget: "string"}
               - {label: "Photo", name: "photo", widget: "image"}
+      - label: "Home Page"
+        name: "home"
+        file: "src/pages/home.json"
+        fields:
+          - label: "Photo 1"
+            name: "photo1"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "src", widget: "image"}
+              - {label: "Description", name: "alt", widget: "text"}
+          - label: "Photo 2"
+            name: "photo2"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "src", widget: "image"}
+              - {label: "Description", name: "alt", widget: "text"}
+          - label: "Photo 3"
+            name: "photo3"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "src", widget: "image"}
+              - {label: "Description", name: "alt", widget: "text"}

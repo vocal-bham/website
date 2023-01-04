@@ -1,5 +1,5 @@
 ---
-import type { Partner } from "~/components/catalog";
+import type { Partner } from "~/types/catalog";
 
 import Layout from "~/layouts/Layout.astro";
 import PageSection from "~/components/PageSection.astro";
@@ -7,7 +7,7 @@ import CatalogCard from "~/components/CatalogCard.astro";
 
 import { createSearch } from "~/lib/search";
 
-let catalog: Partner[] = [];
+let catalog: Record<string, any>[] = [];
 
 try {
     catalog = await Astro.glob("./**.md");
@@ -20,7 +20,7 @@ const { search } = createSearch(catalog, {
     fields: ["id", "name", "description", "author", "tags"]
 });
 
-const results: Partner[] = query ? search(query) : catalog;
+const results: Record<string, any>[] = query ? search(query) : catalog;
 ---
 
 <Layout title="Partners Catalog">
