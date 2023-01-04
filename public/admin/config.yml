@@ -52,7 +52,6 @@ collections:
             name: "photo1"
             widget: "list"
             max: 1
-            allow_add: false
             fields:
               - {label: "Image", name: "src", widget: "image"}
               - {label: "Description", name: "alt", widget: "string"}
@@ -60,7 +59,6 @@ collections:
             name: "photo2"
             widget: "list"
             max: 1
-            allow_add: false
             fields:
               - {label: "Image", name: "src", widget: "image"}
               - {label: "Description", name: "alt", widget: "string"}
@@ -68,7 +66,6 @@ collections:
             name: "photo3"
             widget: "list"
             max: 1
-            allow_add: false
             fields:
               - {label: "Image", name: "src", widget: "image"}
               - {label: "Description", name: "alt", widget: "string"}
